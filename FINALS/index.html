@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page with Logo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="JUANSIGNATURE.png" alt="Logo">
+        </div>
+        <nav class="navigation-bar">
+            <a href="#Home">Home</a>
+            <div class="dropdown" id="aboutDropdown">
+                <button class="dropbtn">About</button>
+                <div class="dropdown-content" id="aboutDropdownContent" >
+                    <a href="#OurTeam">Our Team</a>
+                    <a href="#OurHistory">Our History</a>
+                    <a href="#MissionVision">Mission & Vision</a>
+                </div>
+            </div>
+            <a href="#services">Services</a>
+            <a href="#Portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <button id="sidebarToggle">☰</button>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="sidebar hidden" id="sidebar">
+        <a href="#Home">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">About</button>
+            <div class="sidebar-dropdown-content" hidden>
+                <a href="#OurTeam">Our Team</a>
+                <a href="#OurHistory">Our History</a>
+                <a href="#MissionVision">Mission & Vision</a>
+            </div>
+        </div>
+        <a href="#services">Services</a>
+        <a href="#Portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="images">
+            <figure>
+                <img src="The Parisian Life.jpg" alt="The Parisian Life">
+                <figcaption>The Parisian Life (or Interior d'un Cafi) is an oil painting by Juan Luna. It measures 22” by 31”</figcaption>
+            </figure>
+            <figure>
+                <img src="The Death of Cleopatra.jpg" alt="The Death of Cleopatra">
+                <figcaption>The Death of Cleopatra by Juan Luna Year 1881 Medium Oil on canvas Dimensions 250 cm × 340 cm (98.4 in × 132 in)</figcaption>
+            </figure>
+            <figure>
+                <img src="Ensueños de Amor.jpg" alt="Ensueños de Amor">
+                <figcaption>Ensueños de Amor Medium Oil on canvas Measuring by inches (270 mm × 320 mm)</figcaption>
+            </figure>
+            <figure>
+                <img src="Spoliarium.jpg" alt="Spoliarium">
+                <figcaption>The Spoliarium is a painting by Filipino artist Juan Luna. 4.22 meters x 7.675 meters</figcaption>
+            </figure>
+            <figure>
+                <img src="Las Damas Romanas.jpg" alt="Las Damas Romanas">
+                <figcaption>Las Damas Romanas 1882 Type oil on canvas Dimensions 100 cm x 170 cm cyf</figcaption>
+            </figure>
+        </section>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at venenatis metus, non elementum libero.</p>
+    </main>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-logo">
+            <img src="JUANSIGNATURE.png" alt="Logo">
+        </div>
+        <p>Web Designer: JOHN PAULO RELATO </p>
+        <p>Email: relatojohnpaulo@gmail.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
